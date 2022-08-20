@@ -15,7 +15,9 @@ Information related installation, configuration, setting up,... proxmox server a
 
 ## Eliminar les claus ssh i en refeim de noves
 sudo rm /etc/ssh/ssh_host_*
+
 sudo dpkg-reconfigure openssh-server
+
 
 ## Esborrar la clau machine-id i enllaçar-la amb la corresponent
 sudo truncate -s 0 /etc/machine-id
