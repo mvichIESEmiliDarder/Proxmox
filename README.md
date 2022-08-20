@@ -4,26 +4,35 @@ Information related installation, configuration, setting up,... proxmox server a
 # Configurar màquina virtual inicialment
 
 ## Actualitzam la màquina:
-* sudo apt update
-* sudo apt upgrade
+```bash
+sudo apt update
+sudo apt upgrade
+```
 
 ## Instal·lam i engegam l'agent hoste qemu:
-* sudo apt -y install qemu-guest-agent
-* sudo systemctl enable qemu-guest-agent
-* sudo systemctl start qemu-guest-agent
-* sudo systemctl status qemu-guest-agent
+```bash
+sudo apt -y install qemu-guest-agent
+sudo systemctl enable qemu-guest-agent
+sudo systemctl start qemu-guest-agent
+sudo systemctl status qemu-guest-agent
+```
 
 ## Eliminam les claus ssh i en refeim de noves
-* sudo rm /etc/ssh/ssh_host_*
-* sudo dpkg-reconfigure openssh-server
+```bash
+sudo rm /etc/ssh/ssh_host_*
+sudo dpkg-reconfigure openssh-server
+```
 
 ## Canviam hostname pel que li toca
-* sudo nano /etc/hostname 
-* sudo nano /etc/hosts 
+```bash
+sudo nano /etc/hostname 
+sudo nano /etc/hosts 
+```
 
 ## Esborram la clau machine-id i l'enllaçam amb la corresponent
-* sudo truncate -s 0 /etc/machine-id
-* sudo reboot
-* sudo ln -s /etc/machine-id /var/lib/dbus/machine-id
+```bash
+sudo truncate -s 0 /etc/machine-id
+sudo reboot
+```
 
 
