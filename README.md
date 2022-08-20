@@ -17,10 +17,13 @@ Information related installation, configuration, setting up,... proxmox server a
 * sudo rm /etc/ssh/ssh_host_*
 * sudo dpkg-reconfigure openssh-server
 
-## Esborram la clau machine-id i l'enllaçam amb la corresponent
-* sudo truncate -s 0 /etc/machine-id
-* sudo ln -s /etc/machine-id /var/lib/dbus/machine-id
-
 ## Canviam hostname pel que li toca
 * sudo nano /etc/hostname 
 * sudo nano /etc/hosts 
+
+## Esborram la clau machine-id i l'enllaçam amb la corresponent
+* sudo truncate -s 0 /etc/machine-id
+* sudo reboot
+* sudo ln -s /etc/machine-id /var/lib/dbus/machine-id
+
+
