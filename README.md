@@ -1,5 +1,5 @@
 # Proxmox
-Information related installation, configuration, setting up,... proxmox server as VMs
+Information related installation, configuration, setting up,... proxmox server and VMs
 
 # Configurar màquina virtual inicialment
 
